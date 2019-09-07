@@ -13,4 +13,8 @@ public class HomeServiceImpl implements HomeService {
     public String result() {
         return "result2";
     }
+
+    public String result2() {
+        return "hello result2";
+    }
 }
