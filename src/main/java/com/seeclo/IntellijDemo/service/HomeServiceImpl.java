@@ -11,6 +11,6 @@ public class HomeServiceImpl implements HomeService {
 
     @Override
     public String result() {
-        return null;
+        return "result2";
     }
 }
