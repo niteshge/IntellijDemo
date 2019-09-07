@@ -16,9 +16,20 @@ public class HomeController {
     @Qualifier("homeService")
     private HomeService homeServiceImpl;
 
+    @Autowired
+    @Qualifier("validate")
+    private HomeService validateService;
+
 
     @GetMapping(value = "home")
     public String home(){
         return homeServiceImpl.homeValidate();
     }
+
+
+    @GetMapping(value = "result")
+    public String result(){
+        return validateService.result();
+    }
+
 }
